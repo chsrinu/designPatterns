@@ -1,5 +1,7 @@
 # designPatterns
+
 my understanding of design patterns <br/>
+
 Singleton design pattern: At any point of time you need to ensure only one instance of an object exists. Have shown the basic implementation and multithreaded implementation.<br/>
   Important terms that I have encountered while learning the singleton design pattern:<br/>
     * Eager initialization<br/>
