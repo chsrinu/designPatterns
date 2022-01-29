@@ -1,4 +1,4 @@
-package singleton.fails.multithread;
+package creational.singleton.fails.multithread;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

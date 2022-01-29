@@ -1,4 +1,4 @@
-package singleton.fails.multithread;
+package creational.singleton.pass.multithread;
 
 public class SingletonPatternRunner {
     public void runSingleton(){
@@ -6,7 +6,6 @@ public class SingletonPatternRunner {
         Thread t1 = new Thread(pc);
         Thread t2 = new Thread(pc);
         Thread t3 = new Thread(pc);
-
 
         PrinterClient pc1 = new PrinterClient();
         PrinterClient pc2 = new PrinterClient();

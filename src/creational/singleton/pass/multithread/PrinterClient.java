@@ -1,4 +1,4 @@
-package singleton.fails.multithread;
+package creational.singleton.pass.multithread;
 
 public class PrinterClient implements Runnable {
 
