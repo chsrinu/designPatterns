@@ -6,5 +6,7 @@ public class Root {
         runner.runSingleton();
 
         runner.runBuilder();
+
+        runner.runFactory();
     }
 }

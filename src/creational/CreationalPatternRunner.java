@@ -1,6 +1,8 @@
 package creational;
 
 import creational.builder.User;
+import creational.factory.Television;
+import creational.factory.TvFactory;
 import creational.singleton.fails.multithread.SingletonPatternRunner;
 
 public class CreationalPatternRunner {
@@ -43,6 +45,14 @@ public class CreationalPatternRunner {
         //there is no method that you can access to change any property of the user, so guess what??
         //yayyy!!! the object is immutable
         //u.
-        System.out.println("user created: "+u);
+        System.out.println("userBuilder created: "+u);
+    }
+
+    public void runFactory(){
+        //cannot be instantiated as its having protected access
+        //Television tv = new SmartTv();
+        TvFactory factory = new TvFactory();
+        Television myTv = factory.getTelevision("TvWithOTTApps");
+        System.out.println("TvFactory: "+myTv.toString());
     }
 }
