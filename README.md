@@ -41,4 +41,21 @@
         Always give interface types to client(this is what is code for interface means), so that we you need to add or remove a particular class if there is an interface
         the client will never know about the concrete classes.
     </div>
+ <h3>Abstract Factory design pattern</h3>
+    <div>
+        Important terms that I have come across while learning this pattern
+        <ul>
+            <li> Loose coupling</li>
+        </ul>
+        Use this pattern when similar kind of factories needs to created or if the contracts or interfaces belong the same root. In my example I have shown
+        <OL>
+          <li>MAMMALS IS-A ANIMAL  (ANIMAL ABSTRACT FACTORY)</li>
+          <li>REPTILES IS-A ANIMAL (ANIMAL ABSTRACT FACTORY)</li>
+          <li>HUMAN IS-A MAMMAL (MAMMAL FACTORY)</li>
+          <li>COW IS-A MAMMAL (MAMMAL FACTORY)</li>
+          <li>SNAKE IS-A REPTILE (REPTILE FACTORY)</li>
+          <li>CROCODILE IS-A REPTILE (REPTILE FACTORY)</li>
+          </ol>
+        Since both the categories(REPTILES and MAMMALS) belong to the same root(ANIMAL) I have to use Abstract factory. This pattern can be learned easily through implementation (by practice).
+    </div>
 
