@@ -8,5 +8,7 @@ public class Root {
         runner.runBuilder();
 
         runner.runFactory();
+
+        runner.runAbstractFactory();
     }
 }
