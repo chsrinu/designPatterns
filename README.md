@@ -34,6 +34,8 @@
     <div>
         Important terms that I have come across while learning this pattern
         <ul>
+            <li> Helps in creating a <b>Family</b> of related products</li>
+            <li> Text book definition: Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer                    instantiation to subclasses.</li>
             <li> Loose coupling</li>
             <li> Code for the interface not for implementation</li>
             <li> Achieves abstraction between client and concrete classes through factory class</li>
@@ -45,7 +47,9 @@
     <div>
         Important terms that I have come across while learning this pattern
         <ul>
-            <li> Loose coupling</li>
+          <li> Helps in creating <b>Families</b> of related products</li> 
+          <li> Text book definition: Provide an interface for creating families of related or dependent objects without specifying their concrete classes.</li>
+          <li> Loose coupling</li>
         </ul>
         Use this pattern when similar kind of factories needs to created or if the contracts or interfaces belong the same root. In my example I have shown
         <OL>
