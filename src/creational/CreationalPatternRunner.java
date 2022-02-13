@@ -6,9 +6,7 @@ import creational.abstractfactory.factories.AnimalFactory;
 import creational.builder.User;
 import creational.factory.Television;
 import creational.factory.TvFactory;
-import creational.prototype.PrototypeFactory;
-import creational.prototype.Rectangle;
-import creational.prototype.Shape;
+import creational.prototype.Employees;
 import creational.singleton.fails.multithread.SingletonPatternRunner;
 
 import java.util.ArrayList;
@@ -85,18 +83,19 @@ public class CreationalPatternRunner {
 
     public void runPrototype() throws CloneNotSupportedException {
         System.out.println("----Prototype----");
-        System.out.println("creating objects without knowing the concrete class using Clone");
         /*This is more or less same as factory pattern but an ideal prototype design pattern
         * would have some costly operation before creating an object which is why we copy the
         * object created once. So we can get any number newInstances with the same cost of creating
         * one object
         * */
-        PrototypeFactory factory = new PrototypeFactory();
-        List<Shape> shapes = new ArrayList<>();
-        Shape s1 = factory.getInstance(PrototypeFactory.ShapeType.CIRCLE);
-        Shape s2 = factory.getInstance(PrototypeFactory.ShapeType.RECTANGLE);
-        Shape s3 = factory.getInstance(PrototypeFactory.ShapeType.SQUARE);
-        shapes.add(s1);shapes.add(s2);shapes.add(s3);
-        for(Shape s:shapes) s.draw();
+        Employees employees = new Employees();
+        Employees employees_1 = employees.clone();
+        Employees employees_2 = employees.clone();
+
+        employees_2.getEmpList().add("Beta");
+
+        employees_1.getEmpList().remove("Sreeni");
+
+        System.out.println(employees.getEmpList() +" "+employees_1.getEmpList()+" "+employees_2.getEmpList());
     }
 }
