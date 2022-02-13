@@ -10,5 +10,11 @@ public class Root {
         runner.runFactory();
 
         runner.runAbstractFactory();
+
+        try {
+            runner.runPrototype();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
     }
 }
