@@ -62,4 +62,14 @@
           </ol>
         Since both the categories(REPTILES and MAMMALS) belong to the same root(ANIMAL) I have to use Abstract factory. This pattern can be learned easily through implementation (by practice).
     </div>
+  <h3>Prototype design pattern</h3>
+    <div>
+        Important terms that I have come across while learning this pattern
+        <ul>
+            <li> When we need to go through some costly operation for creating the same Object, we use this pattern</li>
+            <li> Similar to factory pattern the client is unaware of the concrete class</li>
+        </ul>
+        An ideal prototype design pattern would solve the problem of running a costly operation again and again when we create an object, which is why we copy the
+        object created once. So we can get any number newInstances with the same cost of creating one object.
+    </div>
 
